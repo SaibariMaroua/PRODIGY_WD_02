@@ -1,0 +1,113 @@
+body {
+    background-image: url('image.jpg'); 
+    background-color: #f7f9fc; 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.stopwatch {
+    width: 300px;
+    border-radius: 15px; 
+    background: linear-gradient(145deg, #000000 70%, #fbc02d 30%); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #e0e0e0; 
+}
+
+.display {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    background: linear-gradient(145deg, #ffffff, #fff9c4); 
+    color: #333; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3em; 
+    margin-bottom: 20px;
+    border: 4px solid #ffeb3b; 
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+.button-wrapper .btn {
+    padding: 12px 20px;
+    font-size: 1em;
+    margin: 5px;
+    border-radius: 8px; 
+    transition: all 0.3s ease; 
+    color: #fff; 
+    border: none;
+}
+
+.button-wrapper .btn-success {
+    background-color: #4caf50; 
+}
+
+.button-wrapper .btn-success:hover {
+    background-color: #388e3c;
+}
+
+.button-wrapper .btn-primary {
+    background-color: #ffeb3b; 
+}
+
+.button-wrapper .btn-primary:hover {
+    background-color: #fdd835; 
+}
+
+.button-wrapper .btn-danger {
+    background-color: #f44336; 
+}
+
+.button-wrapper .btn-danger:hover {
+    background-color: #d32f2f; 
+}
+
+.button-wrapper .btn-secondary {
+    background-color: #9e9e9e;
+}
+
+.button-wrapper .btn-secondary:hover {
+    background-color: #757575; 
+}
+
+
+.laps {
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 0;
+    margin-top: 20px;
+    border-top: 1px solid #e0e0e0; 
+}
+
+.laps .lap-item {
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #555;
+    background-color: #ffffff; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.laps .lap-item .number {
+    font-weight: bold;
+    color: #333;
+}
+
+.laps .lap-item .time-stamp {
+    color: #666;
+}
+
+.d-none {
+    display: none;
+}
